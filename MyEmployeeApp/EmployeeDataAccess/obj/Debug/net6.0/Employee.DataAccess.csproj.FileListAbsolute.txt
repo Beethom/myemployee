@@ -1,0 +1,12 @@
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/bin/Debug/net6.0/Employee.DataAccess.deps.json
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/bin/Debug/net6.0/Employee.DataAccess.dll
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/bin/Debug/net6.0/Employee.DataAccess.pdb
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.csproj.AssemblyReference.cache
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.AssemblyInfoInputs.cache
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.AssemblyInfo.cs
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.csproj.CoreCompileInputs.cache
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.dll
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/refint/Employee.DataAccess.dll
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/Employee.DataAccess.pdb
+/Users/key/Desktop/MyEmployeeApp/EmployeeDataAccess/obj/Debug/net6.0/ref/Employee.DataAccess.dll

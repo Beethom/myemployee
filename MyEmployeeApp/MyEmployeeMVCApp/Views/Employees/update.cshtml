@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model EmployeesViewModel
+@using Employee.DataAccess.Models
+
+@{
+    string pageType = Model.CurrentEmployee.EmpID > 0 ? "Update Employee" : "Create Employee";
+
+    ViewData["Title"] = $"CRUD Applications | {pageType}";
+}
+
+<form action="~/Employees/Index" method="post">
+    <div>
+        <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h1 class="display-4" style="margin: 20px 0px;">@pageType</h1>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>First Name: </label>
+                <input type="text" class="form-control" name="EmpFName" value="@Model.CurrentEmployee.EmpfName" />
+            </div>
+            
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Last Name: </label>
+                <input type="text" class="form-control" name="EmpLName" value="@Model.CurrentEmployee.EmplName" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Phone Number: </label>
+                <input type="tel" class="form-control" name="EmpPhone" value="@Model.CurrentEmployee.EmpPhone" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Email Address: </label>
+                <input type="email" class="form-control" name="EmpEmail" value="@Model.CurrentEmployee.EmpEmail" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>SSN: </label>
+                <input type="number" class="form-control" name="EmpSsn" value="@Model.CurrentEmployee.EmpSsn" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>DOB: </label>
+                <input type="date" class="form-control" name="EmpDOB" value="@Model.CurrentEmployee.EmpDOB" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Role: </label>
+                <input type="text" class="form-control" name="EmpRole" value="@Model.CurrentEmployee.EmpRole" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Salary: </label>
+                <input type="number" class="form-control" name="EmpSalary" value="@Model.CurrentEmployee.EmpSalary" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Hiring Date: </label>
+                <input type="date" class="form-control" name="HiringDate" value="@Model.CurrentEmployee.HiringDate" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Manager: </label>
+                <input type="text" class="form-control" name="Manager" value="@Model.CurrentEmployee.Manager" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3">
+                <button type="button" class="btn btn-secondary" onclick="location.href = '/Employees/Index'">CANCEL</button>
+                <button type="submit" class="btn btn-primary">SAVE EMPLOYEE</button>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="empId" value="@Model.CurrentEmployee.EmpID" />
+</form>
+

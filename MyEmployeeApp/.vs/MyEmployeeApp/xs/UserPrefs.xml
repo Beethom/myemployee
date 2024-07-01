@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{5F57283C-CADB-4D57-9A07-F11C382A042C}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmployeeDataAccess/Controllers/EmployeeController.cs">
+    <Files>
+      <File FileName="MyEmployeeMVCApp/Controllers/EmployeesController.cs" />
+      <File FileName="MyEmployeeMVCApp/Program.cs" />
+      <File FileName="MyEmployeeMVCApp/appsettings.json" />
+      <File FileName="EmployeeDataAccess/IEmployeeConfigManager.cs" />
+      <File FileName="EmployeeDataAccess/EmployeeConfigManager.cs" />
+      <File FileName="EmployeeDataAccess/Models/EmployeeModel.cs" />
+      <File FileName="EmployeeDataAccess/Controllers/EmployeeController.cs" Line="125" Column="29" />
+      <File FileName="MyEmployeeMVCApp/Properties/launchSettings.json" />
+      <File FileName="MyEmployeeMVCApp/appsettings.Development.json" />
+      <File FileName="MyEmployeeMVCApp/Models/EmployeesViewModel.cs" />
+      <File FileName="MyEmployeeMVCApp/Views/Employees/index.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/Home/Index.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/Employees/update.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/_ViewStart.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/_ViewImports.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/Home/Privacy.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Models/ErrorViewModel.cs" />
+      <File FileName="MyEmployeeMVCApp/Controllers/HomeController.cs" />
+      <File FileName="MyEmployeeMVCApp/wwwroot/js/site.js" />
+      <File FileName="MyEmployeeMVCApp/wwwroot/css/site.css" />
+      <File FileName="EmployeeDataAccess/t.txt" />
+      <File FileName="MyEmployeeMVCApp/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/Shared/_Layout.cshtml" />
+      <File FileName="MyEmployeeMVCApp/Views/Pages/Index.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyEmployeeApp" expanded="True" selected="True">
+            <Node name="Employee.DataAccess" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="MyEmployeeMVCApp" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Employees" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Pages" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MyEmployeeMVCApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>MyEmployeeApp/MyEmployeeApp.csproj</String>
+  </DisabledProjects>
+</Properties>

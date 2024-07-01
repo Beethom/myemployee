@@ -1,0 +1,102 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model EmployeesViewModel
+@using Employee.DataAccess.Models
+
+@{
+    ViewData["Title"] = "MyEmployee App | Employees";
+}
+
+<script type="text/javascript">function openLocation(url) {
+        window.location.href = url;
+    }
+
+    function confirmDelete(id) {
+        $("#hdnDeleteEmpId").val(id);
+        $("#deleteModal").modal('show');
+    }
+
+    function cancelDelete() {
+        $("#hdnDeleteEmpId").val(0);
+        $("#deleteModal").modal('hide');
+    }
+
+    function deleteEmployee() {
+        var id = $("#hdnDeleteEmpId").val();
+        window.location.href = "/Employees/Delete/" + id;
+    }</script>
+
+<input type="hidden" id="hdnDeleteEmpId" value="0" />
+
+<div class="text-center">
+    @if (!String.IsNullOrEmpty(Model.ActionMessage))
+    {
+        string colorClass = Model.IsActionSuccess ? "alert-success" : "alert-danger";
+
+        <div class="alert @colorClass alert-dismissible fade show" role="alert">
+            <strong>@Model.ActionMessage</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <h1 class="display-4">Employees</h1>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <table class="table">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <th>SSN</th>
+                    <th>Date of Birth</th>
+                    <th> role</th>
+                    <th>Salary</th>
+                    <th>Hiring Date</th>
+                    <th>Manager</th>
+                    <th colspan="2"><button type="button" onclick="javascript:openLocation('/Employees/Update/0')" class="btn btn-success btn-sm">ADD NEW EMPLOYEE</button></th>
+                </tr>
+
+                @foreach (EmployeeModel employee in Model.EmployeeList)
+                {
+                    <tr>
+                        <td>@employee.EmpfName</td>
+                        <td>@employee.EmplName</td>
+                        <td>@employee.EmpPhone</td>
+                        <td>@employee.EmpEmail</td>
+                        <td>@employee.EmpSsn</td>
+                        <td>@employee.EmpDOB.ToString("MM dd, yyyy")</td>
+                        <td>@employee.EmpRole</td>
+                        <td>@employee.EmpSalary</td>
+                        <td>@employee.HiringDate</td>
+                        <td>@employee.Manager</td>
+
+                        <td><button type="button" onclick="javascript:openLocation('/Employees/Update/@employee.EmpID')" class="btn btn-secondary btn-sm">EDIT</button></td>
+                        <td><button type="button" onclick="javascript:confirmDelete(@employee.EmpID)" class="btn btn-danger btn-sm">DELETE</button></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="deleteModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRM DELETE</h5>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this Employee?</p>
+                <button type="button" onclick="javascript:cancelDelete()" class="btn btn-secondary btn-sm">CANCEL</button>
+                <button type="button" onclick="javascript: deleteEmployee()" class="btn btn-danger btn-sm">DELETE</button>
+            </div>
+        </div>
+    </div>
+</div>
